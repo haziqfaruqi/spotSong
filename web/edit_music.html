@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Music Record</title>
+</head>
+<body>
+    <h1>Edit Music Record</h1>
+    <form action="EditMusicServlet" method="post">
+        <input type="hidden" name="id" value="${id}"> 
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" value="${title}" required><br><br>
+        
+        <label for="artist">Artist:</label>
+        <input type="text" id="artist" name="artist" value="${artist}" required><br><br>
+        
+        <label for="genre">Genre:</label>
+        <input type="text" id="genre" name="genre" value="${genre}" required><br><br>
+        
+        <label for="yearReleased">Year Released:</label>
+        <input type="text" id="yearReleased" name="yearReleased" value="${yearReleased}" required><br><br>
+        
+        <input type="submit" value="Update Record">
+    </form>
+</body>
+</html>

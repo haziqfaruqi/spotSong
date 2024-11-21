@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to SpotSong</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 400px; 
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            margin: 10px 0;
+            background-color: #fff;
+            color: #ff7e5f;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            width: 100%; 
+            box-sizing: border-box;
+        }
+
+        a:hover {
+            background-color: #feb47b; 
+            transform: scale(1.05); 
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); 
+        }
+
+        a:active {
+            background-color: #e97162;
+        }
+
+        .names {
+            font-size: 40px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="names">Welcome to SpotSong</div>
+    </div>
+    <div class="button-container">
+        <a href="list_library.view">My favorite</a>
+        <a href="add_music.html">Add Music Item</a>
+        <a href="ListMusicServlet">View Music Library</a>
+    </div>
+</body>
+</html>
