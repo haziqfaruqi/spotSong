@@ -211,7 +211,7 @@ public class EditMusicServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        response.sendRedirect("ListMusicServlet");
+        response.sendRedirect("list_music.jsp");
     }
 
     @Override
